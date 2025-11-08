@@ -41,7 +41,6 @@ float FIRFilter_calc(FIRFilter *fir, float inputVal) {
         } else {
             sumIndex = FIR_FILTER_LENGTH - 1;
         }
-        
         // The convolution process: Multiply the impulse response with the SHIFTED input sample and add it to the output
         fir->out = fir->out + fir->buff[sumIndex] * FIR_FILTER_IMPULSE_RESPONSE[i];
     }
