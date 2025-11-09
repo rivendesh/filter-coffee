@@ -1,8 +1,8 @@
 #include "../include/FIR.h"
 
 // Define the variable in the stack memory, including declaration
-// static float FIR_FILTER_IMPULSE_RESPONSE[FIR_FILTER_LENGTH] = {0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1};
-static float FIR_FILTER_IMPULSE_RESPONSE[FIR_FILTER_LENGTH] = {0.4, 0.3, 0.2, 0.1, 0.75};
+static float FIR_FILTER_IMPULSE_RESPONSE[FIR_FILTER_LENGTH] = {0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1};
+// static float FIR_FILTER_IMPULSE_RESPONSE[FIR_FILTER_LENGTH] = {0.4, 0.3, 0.2, 0.1, 0.75};
 
 // function to initialise the circular buffer value, use pointer to FIRFilter variable so that we do not need to copy the memory value (more efficient)
 void FIRFilter_init(FIRFilter *fir) {
