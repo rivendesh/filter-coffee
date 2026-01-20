@@ -33,7 +33,7 @@ def main():
     print(f"Range of Values: [{str(min(signal))}, {str(max(signal))}]")
     print(type(signal))
 
-    writeSignal(signal, signalLength)
+    writeSignal(signalLength)
 
     print("Generated signal written to output file!")
 
